@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./pages/**/*.js", "./components/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        md: "853px",
+      },
+    },
   },
   screens: {
     sm: "640px",
