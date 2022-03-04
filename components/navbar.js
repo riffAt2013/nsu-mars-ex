@@ -4,7 +4,7 @@ import { Transition } from "@headlessui/react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <>
+    <div>
       <nav className="bg-amber-400">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-around h-16">
@@ -183,6 +183,6 @@ export default function Navbar() {
           )}
         </Transition>
       </nav>
-    </>
+    </div>
   );
 }

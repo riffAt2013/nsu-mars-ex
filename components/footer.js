@@ -1,20 +1,20 @@
-export default function Footer(props) {
+export default function Footer() {
   return (
-    <>
-      <footer className="text-center lg:text-left bg-amber-400 text-gray-600">
-        <div className="flex items-center lg:justify-between p-6 border-b border-gray-300">
+    <div>
+      <footer className="text-center lg:text-left bg-amber-400 font-bold text-slate-900">
+        <div className="flex items-center justify-center lg:justify-center p-6  border-gray-300">
           <div className="mr-12 hidden lg:block">
             <span>Follow us on social networks:</span>
           </div>
 
-          <div className="flex justify-center">
-            <a href="#!" className="mr-6 text-slate-900">
+          <div className="flex space-x-6 items-center">
+            <a href="#!" className="text-orange-800 hover:animate-spin">
               <svg
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fab"
                 data-icon="facebook-f"
-                className="w-6"
+                className="w-5"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 320 512"
@@ -26,13 +26,13 @@ export default function Footer(props) {
               </svg>
             </a>
 
-            <a href="#!" className="mr-6 text-gray-600">
+            <a href="#!" className="text-orange-800 hover:animate-spin">
               <svg
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fab"
                 data-icon="instagram"
-                className="w-3.5"
+                className="w-6"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
@@ -46,97 +46,48 @@ export default function Footer(props) {
           </div>
         </div>
 
-        <div className="mx-6 py-10 text-center md:text-left">
-          <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* links section */}
+        <div className="mx-6 py-10 text-center md:text-left flex justify-center">
+          <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-2 md:gap-x-12 gap-y-6">
             <div className="">
-              <h6
-                className="
-            uppercase
-            font-semibold
-            mb-4
-            flex
-            items-center
-            justify-center
-            md:justify-start
-          "
-              >
-                <svg
-                  aria-hidden="true"
-                  focusable="false"
-                  data-prefix="fas"
-                  data-icon="cubes"
-                  className="w-4 mr-3"
-                  role="img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M488.6 250.2L392 214V105.5c0-15-9.3-28.4-23.4-33.7l-100-37.5c-8.1-3.1-17.1-3.1-25.3 0l-100 37.5c-14.1 5.3-23.4 18.7-23.4 33.7V214l-96.6 36.2C9.3 255.5 0 268.9 0 283.9V394c0 13.6 7.7 26.1 19.9 32.2l100 50c10.1 5.1 22.1 5.1 32.2 0l103.9-52 103.9 52c10.1 5.1 22.1 5.1 32.2 0l100-50c12.2-6.1 19.9-18.6 19.9-32.2V283.9c0-15-9.3-28.4-23.4-33.7zM358 214.8l-85 31.9v-68.2l85-37v73.3zM154 104.1l102-38.2 102 38.2v.6l-102 41.4-102-41.4v-.6zm84 291.1l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6zm240 112l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6z"
-                  ></path>
-                </svg>
-                Tailwind ELEMENTS
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
-            </div>
-            <div className="">
-              <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                Products
-              </h6>
-              <p className="mb-4">
-                <a href="#!" className="text-gray-600">
-                  Angular
-                </a>
-              </p>
-              <p className="mb-4">
-                <a href="#!" className="text-gray-600">
-                  React
-                </a>
-              </p>
-              <p className="mb-4">
-                <a href="#!" className="text-gray-600">
-                  Vue
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-gray-600">
-                  Laravel
-                </a>
-              </p>
-            </div>
-            <div className="">
-              <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+              <h6 className="uppercase font-semibold mb-4 text-xl">
                 Useful links
               </h6>
-              <p className="mb-4">
-                <a href="#!" className="text-gray-600">
-                  Pricing
+              <p className="">
+                <a
+                  href="#!"
+                  className="hover:bg-orange-800 rounded-md py-2 px-3 block md:inline"
+                >
+                  Asdsds
                 </a>
               </p>
-              <p className="mb-4">
-                <a href="#!" className="text-gray-600">
-                  Settings
+              <p className="">
+                <a
+                  href="#!"
+                  className="hover:bg-orange-800 rounded-md py-2 px-3 block md:inline"
+                >
+                  B
                 </a>
               </p>
-              <p className="mb-4">
-                <a href="#!" className="text-gray-600">
-                  Orders
+              <p className="">
+                <a
+                  href="#!"
+                  className="hover:bg-orange-800 rounded-md py-2 px-3 block md:inline"
+                >
+                  C
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-gray-600">
-                  Help
+                <a
+                  href="#!"
+                  className="hover:bg-orange-800 rounded-md py-2 px-3 block md:inline"
+                >
+                  D
                 </a>
               </p>
             </div>
             <div className="">
-              <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                Contact
-              </h6>
+              <h6 className="uppercase font-semibold mb-4 text-xl">Contact</h6>
               <p className="flex items-center justify-center md:justify-start mb-4">
                 <svg
                   aria-hidden="true"
@@ -212,16 +163,7 @@ export default function Footer(props) {
             </div>
           </div>
         </div>
-        <div className="text-center p-6 bg-gray-200">
-          <span>© 2021 Copyright:</span>
-          <a
-            className="text-gray-600 font-semibold"
-            href="https://tailwind-elements.com/"
-          >
-            Tailwind Elements
-          </a>
-        </div>
       </footer>
-    </>
+    </div>
   );
 }
