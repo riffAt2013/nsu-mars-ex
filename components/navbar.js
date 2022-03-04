@@ -1,66 +1,78 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Transition } from "@headlessui/react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
+    <>
       <nav className="bg-amber-400">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-around h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <a href="./">
                   <img className="h-12" src="./logo.png" alt="Mars-Ex" />
                 </a>
               </div>
-              <div className="hidden md:block">
-                <div className="ml-8 flex items-baseline space-x-1">
+              <div className="hidden lg:block">
+                <div className="ml-8 flex items-baseline space-x-4">
                   <a
                     href="#"
-                    className="text-slate-900 hover:bg-zinc-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
                   >
-                    Team
+                    Teams
                   </a>
                   <a
                     href="#"
-                    className="text-slate-900 hover:bg-zinc-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
                   >
                     Society
                   </a>
                   <a
                     href="#"
-                    className="text-slate-900 hover:bg-zinc-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
                   >
                     Alumni
                   </a>
                   <a
                     href="#"
-                    className="text-slate-900 hover:bg-zinc-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
                   >
-                    Faculty Advisor
+                    Faculty Advisory Board
                   </a>
                   <a
                     href="#"
-                    className="text-slate-900 hover:bg-zinc-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
                   >
-                    Faculty Advisor
+                    Gallery
                   </a>
                   <a
                     href="#"
-                    className="text-slate-900 hover:bg-zinc-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
                   >
-                    Faculty Advisor
+                    Sponsors
+                  </a>
+                  <a
+                    href="#"
+                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
+                  >
+                    About Us
+                  </a>
+                  <a
+                    href="#"
+                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
+                  >
+                    Contact
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="flex md:hidden">
+            <div className="flex lg:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-700 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-white"
+                className="bg-orange-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -113,49 +125,64 @@ export default function Navbar() {
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="md:hidden" id="mobile-menu">
-              <div ref={ref} className="px-2 pt-2 pb-3 space-y-2 sm:px-3">
+            <div className="lg:hidden" id="mobile-menu">
+              <div
+                ref={ref}
+                className="px-2 pt-2 pb-3 space-y-2 text-center sm:px-3"
+              >
                 <a
                   href="#"
-                  className="text-slate-900 hover:bg-zinc-600 hover:text-white block px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
                 >
                   Team
                 </a>
                 <a
                   href="#"
-                  className="text-slate-900 hover:bg-zinc-600 hover:text-white block px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
                 >
                   Society
                 </a>
                 <a
                   href="#"
-                  className="text-slate-900 hover:bg-zinc-600 hover:text-white block px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
                 >
                   Alumni
                 </a>
                 <a
                   href="#"
-                  className="text-slate-900 hover:bg-zinc-600 hover:text-white block px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
                 >
-                  Faculty Advisor
+                  Faculty Advisory Board
                 </a>
                 <a
                   href="#"
-                  className="text-slate-900 hover:bg-zinc-600 hover:text-white block px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
                 >
-                  Faculty Advisor
+                  Gallery
                 </a>
                 <a
                   href="#"
-                  className="text-slate-900 hover:bg-zinc-600 hover:text-white block px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
                 >
-                  Faculty Advisor
+                  Sponsors
+                </a>
+                <a
+                  href="#"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
+                >
+                  About Us
+                </a>
+                <a
+                  href="#"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
+                >
+                  Contact
                 </a>
               </div>
             </div>
           )}
         </Transition>
       </nav>
-    </div>
+    </>
   );
 }
