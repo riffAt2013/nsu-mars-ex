@@ -11,7 +11,7 @@ export default function Navbar() {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <a href="./">
-                  <img className="h-12" src="./logo.png" alt="Mars-Ex" />
+                  <img className="h-12" src="/logo.png" alt="Mars-Ex" />
                 </a>
               </div>
               <div className="hidden lg:block">

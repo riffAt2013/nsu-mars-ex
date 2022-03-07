@@ -4,7 +4,8 @@ import Footer from "/components/footer";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    // root container
+    <div className="bg-amber-100">
       <Navbar />
       <Component {...pageProps} />
       <Footer />

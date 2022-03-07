@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# public static files can be too large
+/public
