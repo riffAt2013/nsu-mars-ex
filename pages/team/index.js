@@ -3,15 +3,16 @@ import Card from "../../components/card";
 export default function Team() {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-16 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="text-2xl font-medium title-font mb-4 text-gray-900">
             OUR TEAM
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            havent heard of them.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam fuga
+            temporibus est ut praesentium nihil qui nisi, quod quibusdam in,
+            eaque tempora perferendis deserunt repellendus rem. Obcaecati
+            officiis sequi facilis?
           </p>
         </div>
 
