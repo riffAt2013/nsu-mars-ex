@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,26 +14,26 @@ export default function Navbar() {
               <div className="flex-shrink-0">
                 <div className="relative">
                   <div className="w-36 h-10">
-                    <a href="./">
-                      <Image src="/logo.png" alt="logo" layout="fill" />
-                    </a>
+                    <Link href="/">
+                      <a>
+                        <Image src="/logo.png" alt="logo" layout="fill" />
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="hidden lg:block">
                 <div className="ml-8 flex items-baseline space-x-4">
-                  <a
-                    href="#"
-                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
-                  >
-                    Teams
-                  </a>
-                  <a
-                    href="#"
-                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
-                  >
-                    Society
-                  </a>
+                  <Link href="/team">
+                    <a className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold">
+                      Teams
+                    </a>
+                  </Link>
+                  <Link href="/society">
+                    <a className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold">
+                      Society
+                    </a>
+                  </Link>
                   <a
                     href="#"
                     className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
