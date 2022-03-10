@@ -4,12 +4,10 @@ export default function Card(props) {
   return (
     <>
       <div className="p-4 lg:w-1/3 md:w-1/2">
-        <div className="h-full flex flex-col items-center text-center mb-20">
-          <img
-            alt="team"
-            className="rounded-full w-72 object-cover object-center mb-6"
-            src={props.imageURL}
-          />
+        <div className="h-full flex flex-col items-center text-center py-10 px-4 hover:border-4 hover:border-solid hover:border-zinc-500 hover:rounded-md">
+          <div className="rounded-full h-72 w-72 object-cover object-center overflow-hidden relative mb-4">
+            <Image src={props.imageURL} alt="teamMember" layout="fill" />
+          </div>
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">
               {props.name}
@@ -22,28 +20,22 @@ export default function Card(props) {
             </p>
 
             <span className="inline-flex space-x-5">
-              <div className="relative">
-                <div className="w-7 h-7">
-                  <a href="#">
-                    <Image src="/facebook.png" alt="facebook" layout="fill" />
-                  </a>
-                </div>
+              <div className="w-7 h-7 relative">
+                <a href="#">
+                  <Image src="/facebook.png" alt="facebook" layout="fill" />
+                </a>
               </div>
 
-              <div className="relative">
-                <div className="w-7 h-7 ">
-                  <a href="#">
-                    <Image src="/github.png" alt="facebook" layout="fill" />
-                  </a>
-                </div>
+              <div className="w-7 h-7 relative">
+                <a href="#">
+                  <Image src="/github.png" alt="github" layout="fill" />
+                </a>
               </div>
 
-              <div className="relative">
-                <div className="w-7 h-7 ">
-                  <a href="#">
-                    <Image src="/mail.png" alt="facebook" layout="fill" />
-                  </a>
-                </div>
+              <div className="w-7 h-7 relative">
+                <a href="#">
+                  <Image src="/mail.png" alt="email" layout="fill" />
+                </a>
               </div>
             </span>
           </div>
