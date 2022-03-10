@@ -23,7 +23,7 @@ export default function Card(props) {
 
             <span className="inline-flex space-x-5">
               <div className="relative">
-                <div className="w-7 h-7 ">
+                <div className="w-7 h-7">
                   <a href="#">
                     <Image src="/facebook.png" alt="facebook" layout="fill" />
                   </a>

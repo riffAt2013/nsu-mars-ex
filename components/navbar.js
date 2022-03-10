@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +11,13 @@ export default function Navbar() {
           <div className="flex items-center justify-around h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <a href="./">
-                  <img className="h-12" src="/logo.png" alt="Mars-Ex" />
-                </a>
+                <div className="relative">
+                  <div className="w-36 h-10">
+                    <a href="./">
+                      <Image src="/logo.png" alt="logo" layout="fill" />
+                    </a>
+                  </div>
+                </div>
               </div>
               <div className="hidden lg:block">
                 <div className="ml-8 flex items-baseline space-x-4">
