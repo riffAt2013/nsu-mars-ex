@@ -1,10 +1,17 @@
 import Image from "next/image";
 
 export default function Card(props) {
+  const teamHover =
+    " hover:border-4 hover:border-solid hover:border-zinc-500 hover:rounded-md";
   return (
     <>
       <div className="p-4 lg:w-1/3 md:w-1/2">
-        <div className="h-full flex flex-col items-center text-center py-10 px-4 hover:border-4 hover:border-solid hover:border-zinc-500 hover:rounded-md">
+        <div
+          className={
+            "h-full flex flex-col items-center text-center py-10 px-4" +
+            (props.type == "team" ? teamHover : "")
+          }
+        >
           <div className="rounded-full h-72 w-72 object-cover object-center overflow-hidden relative mb-4">
             <Image src={props.imageURL} alt="member" layout="fill" />
           </div>
