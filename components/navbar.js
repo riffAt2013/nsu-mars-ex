@@ -136,51 +136,50 @@ export default function Navbar() {
                 ref={ref}
                 className="px-2 pt-2 pb-3 space-y-2 text-center sm:px-3"
               >
+                <Link href="/team">
+                  <a className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-sm font-bold">
+                    Team
+                  </a>
+                </Link>
+
+                <Link href="/society">
+                  <a className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-sm font-bold">
+                    Society
+                  </a>
+                </Link>
                 <a
                   href="#"
-                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
-                >
-                  Team
-                </a>
-                <a
-                  href="#"
-                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
-                >
-                  Society
-                </a>
-                <a
-                  href="#"
-                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-sm font-bold"
                 >
                   Alumni
                 </a>
                 <a
                   href="#"
-                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-sm font-bold"
                 >
                   Faculty Advisory Board
                 </a>
                 <a
                   href="#"
-                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-sm font-bold"
                 >
                   Gallery
                 </a>
                 <a
                   href="#"
-                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-sm font-bold"
                 >
                   Sponsors
                 </a>
                 <a
                   href="#"
-                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-sm font-bold"
                 >
                   About Us
                 </a>
                 <a
                   href="#"
-                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-md font-bold"
+                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-sm font-bold"
                 >
                   Contact
                 </a>
