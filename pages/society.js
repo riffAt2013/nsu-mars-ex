@@ -1,8 +1,12 @@
+import Head from "next/head";
 import Card from "../components/card";
 
 export default function Society() {
   return (
     <>
+      <Head>
+        <title>Society Members</title>
+      </Head>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-16 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
