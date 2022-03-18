@@ -35,3 +35,7 @@ yarn-error.log*
 
 # public static files can be too large
 /public
+
+# data entry
+entry.csv
+fireUpload.mjs
