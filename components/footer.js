@@ -87,7 +87,9 @@ export default function Footer() {
               </p>
             </div>
             <div className="">
-              <h6 className="uppercase font-semibold mb-4 text-xl">Contact</h6>
+              <h6 id="contact" className="uppercase font-semibold mb-4 text-xl">
+                Contact
+              </h6>
               <p className="flex items-center justify-center md:justify-start mb-4">
                 <svg
                   aria-hidden="true"
