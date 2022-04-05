@@ -21,7 +21,7 @@ export default function Carousel() {
             <div className="w-full relative">
               <div className="w-full h-full bg-slate-500 top-0 left-0 absolute opacity-30"></div>
               <div className="w-full h-full absolute  left-0 flex flex-col justify-center items-center z-50">
-                <h1 className="text-2xl md:text-5xl font-bold text-white">
+                <h1 className="text-2xl md:text-6xl font-bold text-white">
                   Welcome to NSU Mars Ex!
                 </h1>
               </div>
@@ -60,7 +60,7 @@ export default function Carousel() {
           <SwiperSlide>
             <div className="w-full relative">
               <div className="w-full h-full bg-slate-500 top-0 left-0 absolute opacity-30"></div>
-              <div className="w-full h-full absolute -top-10 left-0 flex flex-col justify-center items-center z-50">
+              <div className="w-full h-full absolute  left-0 flex flex-col justify-center items-center z-50">
                 <h1 className="text-2xl md:text-5xl font-bold text-white">
                   Welcome to NSU Mars Ex!
                 </h1>
