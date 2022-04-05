@@ -52,24 +52,21 @@ export default function Navbar() {
                   >
                     Gallery
                   </a>
-                  <a
-                    href="#"
-                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
-                  >
-                    Sponsors
-                  </a>
-                  <a
-                    href="#"
-                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
-                  >
-                    About Us
-                  </a>
-                  <a
-                    href="#"
-                    className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
-                  >
-                    Contact
-                  </a>
+                  <Link href="/#about">
+                    <a className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold">
+                      About Us
+                    </a>
+                  </Link>
+                  <Link href="/#sponsors">
+                    <a className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold">
+                      Sponsors
+                    </a>
+                  </Link>
+                  <Link href="/#contact">
+                    <a className="text-slate-900 hover:bg-orange-800 hover:text-white px-3 py-2 rounded-md text-sm font-bold">
+                      Contact
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -165,12 +162,12 @@ export default function Navbar() {
                 >
                   Gallery
                 </a>
-                <a
-                  href="#"
-                  className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-sm font-bold"
-                >
-                  Sponsors
-                </a>
+
+                <Link href="/sponsors">
+                  <a className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-sm font-bold">
+                    Sponsorss
+                  </a>
+                </Link>
                 <a
                   href="#"
                   className="text-slate-900 hover:bg-orange-800 hover:text-white block px-3 py-2 rounded-md text-sm font-bold"
