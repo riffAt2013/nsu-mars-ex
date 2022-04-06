@@ -5,7 +5,7 @@ export default function Card(props) {
     " hover:border-4 hover:border-solid hover:border-zinc-500 hover:rounded-xl";
   return (
     <>
-      <div className="p-4 lg:w-1/3 md:w-1/2">
+      <div className="p-4 max-w-sm">
         <div
           className={
             "h-full flex flex-col items-center text-center py-10 px-4" +
